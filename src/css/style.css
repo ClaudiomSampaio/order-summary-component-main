@@ -1,0 +1,173 @@
+body {
+   background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--neutral-soft);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 450px;
+    height: 690px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transform: translateY(15%);
+}
+
+.card .image-principal{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.card .descricao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 12px;
+    width: 100%;
+}
+
+
+.card .descricao .title{
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 42px;
+   
+}
+
+.card .descricao .about{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--neutral-medium);
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.8rem;
+    margin: 15px;
+}
+
+.card .info {
+    width: 100%;
+}
+
+.card .content-info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items:flex-start ;
+    background-color: var(--primary-soft);
+    border-radius: 10px 10px;
+    width: 80%;
+    margin-left: 40px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.card .content-info .img-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .content-info .icon {
+    width: 45px;
+    height: 45px;  
+}
+
+.card .content-info h2 {
+    color: var(--neutral-dark);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.6;
+    padding: 10px 5px;
+
+}
+
+.card .content-info span.price {
+    font-size: 16px;
+    color: var(--neutral-medium);
+    font-weight: 400;
+    display: block;
+}
+
+.card .change {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.card .change a:hover{
+    opacity: 0.8;
+}
+
+.card .info .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 18px;
+}
+
+.card .btn .btn-payment {
+    background-color: var(--primary-medium);
+    color: #fff;
+    font-weight: 900;
+    padding: 17px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 11px 32px -10px rgb(26, 17, 120);
+    width: 80%;
+    height: 100%;
+}
+
+.card .btn .btn-payment:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.card .btn .btn-cancel {
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    padding: 7px;
+    color: var( --neutral-medium);
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.card .btn .btn-cancel:hover {
+    color: var(neutral-dark);
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0rem;
+        font-family: 'Red Hat Display', sans-serif;
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: var(--neutral-soft);
+      
+    }
+
+    .card {
+        transform: translateY(12%);
+
+    }
+
+
+}
